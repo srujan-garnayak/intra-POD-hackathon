@@ -1,4 +1,9 @@
 import React from 'react'
+import { FaHome } from "react-icons/fa";
+import { BsBank2 } from "react-icons/bs";
+import { AiOutlineTransaction } from "react-icons/ai";
+import { FaMoneyBillTransfer } from "react-icons/fa6";
+
 
 const Navbar = () => {
     return (
@@ -36,7 +41,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <nav className="space-y-2 my-4">                    
+                <nav className="space-y-2 my-4">
                     <div className="relative">
                         <input
                             type="text"
@@ -60,40 +65,37 @@ const Navbar = () => {
                     </div>
 
                     <div className='flex items-center p-3 rounded-lg cursor-pointer'>
-                        {/* <div className="w-10 h-10 mr-3 bg-gray-200 rounded-full text-black items-center"><span class="material-symbols-outlined">
-                            in_home_mode
-                        </span></div> */}
-                        {/* <span class="material-symbols-outlined">
-                            in_home_mode
-                        </span> */}
-                        <div className='bg-orange-50 text-orange-600 w-48 p-2 rounded-md flex gap-3'><span class="material-symbols-outlined">
-                            in_home_mode
-                        </span><div>
-                                Home
-                            </div></div>
+                        <div className='bg-orange-50 text-orange-600 w-48 p-2 rounded-md flex gap-3'><FaHome className='size-6' /><div>
+                            Home
+                        </div></div>
                     </div>
-                    <div className='flex items-center p-3 rounded-lg cursor-pointer'>
+                    <div className='flex items-center p-3 -my-3 rounded-lg cursor-pointer'>
                         {/* <div className="w-6 h-6 mr-3 bg-gray-200 rounded-full"></div> */}
-                        <div className='text-gray-600 hover:text-orange-600 hover:bg-orange-50 p-1.5 rounded-md w-48 flex gap-3'>
-                            <span class="material-symbols-outlined">
-                                credit_card
-                            </span>
+                        <div className='text-gray-200 hover:text-orange-600 hover:bg-orange-50 p-1.5 rounded-md w-48 flex gap-3'>
+                            <BsBank2 className='size-5.5' />
                             <div>
                                 My Bank
                             </div>
                         </div>
                     </div>
 
-                    <div className='flex items-center p-3 rounded-lg cursor-pointer'>
-                        <div className="w-6 h-6 mr-3 bg-gray-200 rounded-full"></div>
-                        <div className='text-gray-600 hover:text-orange-600 hover:bg-orange-50 p-1.5 rounded-md w-40'>Transaction History</div>
+                    <div className='flex items-center p-3 -my-3 rounded-lg cursor-pointer'>
+                        {/* <div className="w-6 h-6 mr-3 bg-gray-200 rounded-full"></div> */}
+                        <div className='text-gray-200 hover:text-orange-600 hover:bg-orange-50 p-1.5 rounded-md w-48 flex gap-3'>
+                            <AiOutlineTransaction className='size-6' />
+                            <div>
+                                Transaction History
+                            </div></div>
                     </div>
-                    <div className='flex items-center p-3 rounded-lg cursor-pointer'>
-                        <div className="w-6 h-6 mr-3 bg-gray-200 rounded-full"></div>
-                        <div className='text-gray-600 hover:text-orange-600 hover:bg-orange-50 p-1.5 rounded-md w-40'>Payment Transfer</div>
+                    <div className='flex items-center p-3 -my-3 rounded-lg cursor-pointer'>
+                        {/* <div className="w-6 h-6 mr-3 bg-gray-200 rounded-full"></div> */}
+                        <div className='text-gray-200 hover:text-orange-600 hover:bg-orange-50 p-1.5 rounded-md w-48 flex gap-3'>
+                        <FaMoneyBillTransfer className='size-6.5'/> 
+                            <div>Payment Transfer</div>
+                            </div>
                     </div>
 
-                </nav>                          
+                </nav>
             </div>
         </div>
     )
